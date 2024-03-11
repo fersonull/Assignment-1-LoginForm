@@ -1,0 +1,190 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(Fonts/MinecraftTen-VGORe.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: pixelFont;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Images/bg.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background: rgba(128, 128, 128, 0.8);
+    backdrop-filter: blur(20px);
+    width: 400px;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 7rem;
+}
+
+.title h2 {
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+}
+
+.username-input,
+.password-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.username-input label,
+.password-input label {
+    -webkit-text-stroke: 1px black;
+    text-align: left;
+    width: 100%;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.input-field input {
+    padding: 8px 10px;
+    width: 900px;
+    border-radius: 9px;
+    border: none;
+}
+
+.remember-user {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;   
+    gap: 3px;
+    margin-bottom: 15px; 
+}
+
+.remember-user label {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.remember-user input {
+    cursor: pointer ;
+}
+
+.action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-btn input {
+    width: 80px;
+    height: 30px;
+    padding: 7px 15px;
+    font-size: 0.8rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.seperator {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.line::before, .line::after {
+    content: '';
+    background: white;
+    height: 1px;
+    display: block;
+}
+
+.line {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    width: 100%;
+}
+
+.create p {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.create a {
+    -webkit-text-stroke: 1px black;
+    color: #30A3F1;
+}
+
+.action-btn input:hover,
+.action-btn input:focus {
+    -webkit-text-stroke: 1px black;
+    background: transparent;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus {
+    color: #E44825;
+}
+
+.log-btn:hover,
+.log-btn:focus {
+    color: #30A3F1;
+}
+
+.reset-btn:hover, 
+.reset-btn:focus {
+    color: yellow;
+} 
+
+.input-field input:focus {
+    outline: 3px groove dodgerblue;
+}
